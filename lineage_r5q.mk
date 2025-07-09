@@ -15,7 +15,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, device/samsung/r5q/device.mk)
 
 PRODUCT_DEVICE := r5q
-PRODUCT_NAME := lineage_qssi
+PRODUCT_NAME := lineage_r5q
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G770F
 PRODUCT_MANUFACTURER := samsung
@@ -25,4 +25,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-samsung-ss
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="r5qnaxx-user 13 TP1A.220624.014 G770FXXS9HXA1 release-keys"
 
-BUILD_FINGERPRINT := samsung/r5qnaxx/qssi:13/TP1A.220624.014/G770FXXS9HXA1:user/release-keys
+BUILD_FINGERPRINT := samsung/r5qnaxx/r5q:13/TP1A.220624.014/G770FXXS9HXA1:user/release-keys
