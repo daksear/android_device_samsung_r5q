@@ -1,2 +1,19 @@
-[ 
-  {
+[
+   {
+        "repository": "android_hardware_samsung",
+        "target_path": "hardware/samsung",
+        "remote": "lineage",
+   },
+   {
+        "repository": "daksear/android_kernel_samsung_r5q",
+        "target_path": "kernel/samsung/r5q",
+        "remote": "github",
+        "revision": "lineage-20.0",
+   },
+   {
+        "repository": "daksear/android_vendor_samsung_r5q",
+        "target_path": "vendor/samsung/r5q",
+        "remote": "github",
+        "revision": "lineage-20",
+   }
+]
