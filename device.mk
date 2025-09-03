@@ -23,7 +23,7 @@ PRODUCT_PACKAGES += \
 
 # Atrace
 PRODUCT_PACKAGES += \
-  android.hardware.atrace@1.0-service:hardware/interfaces/atrace/android.hardware.atrace@1.0-service
+    android.hardware.atrace@1.0-service:hardware/interfaces/atrace/android.hardware.atrace@1.0-service
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
