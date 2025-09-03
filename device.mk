@@ -21,6 +21,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
 
+# Atrace
+PRODUCT_PACKAGES += \
+  android.hardware.atrace@1.0-service:hardware/interfaces/atrace/android.hardware.atrace@1.0-service
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
