@@ -101,7 +101,9 @@
          black in software (to avoid aliasing or emulate a cutout that is not physically existent).
     -->
      <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
-
+    <!-- Notch -->
+    <string name="config_mainBuiltInDisplayCutout">M 0,0 H -14.85714285714286 V 35.42857142857143 H 14.85714285714286 V 0 H 0 Z @dp</string>
+</resources>
     <!-- Is the device capable of hot swapping an ICC Card -->
      <bool name="config_hotswapCapable">false</bool>
 
