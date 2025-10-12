@@ -1,0 +1,3 @@
+r_file_recursive(vendor_time_daemon, rild)
+r_file_recursive(vendor_time_daemon, vendor_timeservice_app)
+r_file_recursive(vendor_time_daemon, tee)

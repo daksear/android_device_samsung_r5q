@@ -1,0 +1,1 @@
+rw_file_recursive(hal_samsung_camera_flashlight_default, sysfs_camera)

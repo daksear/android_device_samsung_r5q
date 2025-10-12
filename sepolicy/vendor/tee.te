@@ -1,0 +1,3 @@
+set_prop(tee, vendor_qseecomd_prop)
+r_file_recursive(tee, efs_file)
+allow tee efs_file:dir r_dir_perms;

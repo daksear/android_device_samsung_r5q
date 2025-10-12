@@ -1,0 +1,2 @@
+rw_file_recursive(hal_gatekeeper_default, tee_data_file)
+allow hal_gatekeeper_default tee_data_file:dir r_dir_perms;

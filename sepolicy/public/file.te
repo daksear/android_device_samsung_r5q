@@ -1,0 +1,2 @@
+type sysfs_camera, fs_type, sysfs_type;
+type sysfs_power_supply, fs_type, sysfs_type;

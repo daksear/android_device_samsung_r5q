@@ -1,0 +1,5 @@
+w_file_recursive(hal_power_default, sysfs_input)
+rw_file_recursive(hal_power_default, sysfs_touchscreenpanel)
+
+set_prop(hal_power_default, vendor_powerhal_prop)
+get_prop(hal_power_default, vendor_powerhal_prop)

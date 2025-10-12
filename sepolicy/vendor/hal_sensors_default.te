@@ -1,0 +1,6 @@
+allow hal_sensors_default sysfs_input:dir r_dir_perms;
+allow hal_sensors_default sysfs_input:file rw_file_perms;
+allow hal_sensors_default sysfs_touchscreenpanel:dir r_dir_perms;
+allow hal_sensors_default sysfs_touchscreenpanel:file rw_file_perms;
+set_prop(hal_sensors_default, vendor_sensors_prop)
+binder_call(hal_sensors_default, system_server)

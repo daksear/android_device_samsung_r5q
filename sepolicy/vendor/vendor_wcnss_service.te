@@ -1,0 +1,2 @@
+get_prop(vendor_wcnss_service, vendor_mpctl_prop)
+rw_file_recursive(vendor_wcnss_service, vendor_conn_data_file)

@@ -1,0 +1,2 @@
+allow hal_keymaster_default mnt_vendor_file:dir search;
+r_file_recursive(hal_keymaster_default, efs_file)

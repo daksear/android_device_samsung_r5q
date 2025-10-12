@@ -1,0 +1,2 @@
+allow charger_vendor device:dir r_dir_perms;
+r_file_recursive(charger_vendor, sysfs_power_supply)

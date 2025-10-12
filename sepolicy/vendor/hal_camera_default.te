@@ -1,0 +1,4 @@
+rw_file_recursive(hal_camera_default, sysfs_camera)
+allow hal_camera_default vendor_xdsp_device:chr_file ioctl;
+get_prop(hal_camera_default, vendor_mpctl_prop)
+binder_call(hal_camera_default, system_server)

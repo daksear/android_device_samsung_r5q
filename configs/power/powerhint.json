@@ -1,0 +1,84 @@
+{
+  "Nodes": [
+    {
+      "Name": "CPUCluster0MinFreq",
+      "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq",
+      "Values": [300000, 1400000]
+    },
+    {
+      "Name": "CPUCluster1MinFreq",
+      "Path": "/sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq",
+      "Values": [710000, 1785000]
+    },
+    {
+      "Name": "CPUCluster2MinFreq",
+      "Path": "/sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq",
+      "Values": [825000, 2419000]
+    },
+    {
+      "Name": "GPUFreq",
+      "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/min_freq",
+      "Values": [180000000, 585000000]
+    },
+    {
+      "Name": "SchedBoost",
+      "Path": "/proc/sys/kernel/sched_boost",
+      "Values": [0, 1]
+    }
+  ],
+
+  "Actions": [
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "SchedBoost",
+      "Duration": 1500,
+      "Value": 1
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUCluster1MinFreq",
+      "Duration": 1500,
+      "Value": 1400000
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPUCluster2MinFreq",
+      "Duration": 3000,
+      "Value": 2419000
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "GPUFreq",
+      "Duration": 3000,
+      "Value": 585000000
+    },
+    {
+      "PowerHint": "SUSTAINED_PERFORMANCE",
+      "Node": "CPUCluster0MinFreq",
+      "Value": 710000
+    },
+    {
+      "PowerHint": "SUSTAINED_PERFORMANCE",
+      "Node": "CPUCluster1MinFreq",
+      "Value": 1785000
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING",
+      "Node": "CPUCluster1MinFreq",
+      "Duration": 5000,
+      "Value": 1785000
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING",
+      "Node": "GPUFreq",
+      "Duration": 5000,
+      "Value": 430000000
+    },
+    {
+      "PowerHint": "AUDIO_STREAMING",
+      "Node": "CPUCluster0MinFreq",
+      "Value": 710000
+    }
+  ]
+}
+

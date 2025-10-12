@@ -1,0 +1,27 @@
+# hal_fingerprint_default.te
+
+# /dev/esfp[0-9]
+allow hal_fingerprint_default fingerprint_sensor_device:chr_file rw_file_perms;
+
+# /data/vendor/ -> biometrics
+file_type_auto_trans(hal_fingerprint_default, vendor_data_file, vendor_biometrics_data_file)
+
+# /data/vendor/biometrics/*
+allow hal_fingerprint_default vendor_biometrics_data_file:file create_file_perms;
+
+# /sys/class/fingerprint/
+allow hal_fingerprint_default sysfs_fingerprint:dir r_dir_perms;
+allow hal_fingerprint_default sysfs_fingerprint:file r_file_perms;
+
+# /dev/qseecom
+allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
+
+# /sys/devices/platform/soc/soc:battery/power_supply/battery/temp
+r_file_recursive(hal_fingerprint_default, sysfs_power_supply)
+
+# /efs/biometrics
+allow hal_fingerprint_default efs_file:dir search;
+r_file_recursive(hal_fingerprint_default, biometrics_efs_file)
+
+# /sys/devices/virtual/lcd/panel/cell_id
+allow hal_fingerprint_default sysfs_touchscreenpanel:file r_file_perms;
