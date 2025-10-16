@@ -30,10 +30,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tavil.xml \
     $(LOCAL_PATH)/configs/audio/audio_platform_info_diff.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_diff.xml 
 
+
 # Init files
 PRODUCT_PACKAGES += \
     init.r5q.rc \
-    nxp.android.hardware.nfc@1.1-service.rc
+    nxp.android.hardware.nfc@1.1-service.rc 
 
 # Camera
 $(call soong_config_set,samsungCameraVars,extra_ids,52)
@@ -60,7 +61,7 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    sensors.r5q
+    sensors.samsung
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf

@@ -6,7 +6,7 @@
 prebuilt_etc {
     name: "init.r5q.rc",
     src: "init.r5q.rc",
-    sub_dir: "init/hw",
+    sub_dir: "init/",
     soc_specific: true,
 }
 
@@ -14,5 +14,12 @@ prebuilt_etc {
     name: "nxp.android.hardware.nfc@1.1-service.rc",
     src: "nxp.android.hardware.nfc@1.1-service.rc",
     sub_dir: "init/",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.udfps.rc",
+    src: "init.udfps.rc",
+    sub_dir: "init/hw",
     soc_specific: true,
 }
