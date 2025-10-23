@@ -7,7 +7,6 @@
  */
 -->
 <resources>
-    <!-- Bottom margin size when fingerprint in display is active -->
-    <dimen name="keyguard_indication_margin_bottom">20dp</dimen>
+    <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
+    <string name="def_device_name_simple">Galaxy S10 Lite</string>
 </resources>
-

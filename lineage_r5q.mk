@@ -13,9 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from r5q device
 $(call inherit-product, device/samsung/r5q/device.mk)
@@ -29,21 +26,15 @@ PRODUCT_DEVICE := r5q
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G770F
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_GMS_CLIENTID_BASE := android-samsung
-
-PRODUCT_AAPT_CONFIG := xxxhdpi
-PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
-
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
 
 # Use the latest approved GMS identifiers
-PRODUCT_GMS_CLIENTID_BASE := android-samsung-ss
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_DEVICE=r5q \
-    TARGET_BOOTLOADER_BOARD_NAME=msmnile \
-    PRODUCT_NAME=r5qnaxx \
-    PRIVATE_BUILD_DESC="r5qnaxx-user 10 QP1A.190711.020 G770FXXS3CTJ3 release-keys"
+PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
-BUILD_FINGERPRINT := "samsung/r5qnaxx/r5q:10/QP1A.190711.020/G770FXXS3CTJ3:user/release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="r5qnaxx-user 13 TP1A.220624.014 G770FXXS9HXA1 release-keys" \
+    PRODUCT_DEVICE=r5q \
+    PRODUCT_NAME=r5qnaxx \
+    TARGET_BOOTLOADER_BOARD_NAME=sm8150 \
+
+
+BUILD_FINGERPRINT := "samsung/r5qnaxx/r5q:13/TP1A.220624.014/G770FXXS9HXA1:user/release-keys"
